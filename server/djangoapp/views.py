@@ -39,7 +39,7 @@ def login_user(request):
 
 # Create a `logout_request` view to handle sign out request
 def logout_request(request):
-    logout(request)from .restapis import get_request, analyze_review_sentiments, post_review
+    logout(request)
     data = {"userName":""}
     return JsonResponse(data)
 
