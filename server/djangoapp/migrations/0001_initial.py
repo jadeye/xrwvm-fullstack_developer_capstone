@@ -57,16 +57,17 @@ class Migration(migrations.Migration):
                     'year',
                     models.IntegerField(
                         validators=[
-                            django.core.validators.MinValueValidator(1900),
-                            django.core.validators.MaxValueValidator(2024)
-                        ]
+                            django.core.validators.MinValueValidator(2015),
+                            django.core.validators.MaxValueValidator(2023)
+                        ],
+                        default=2023
                     )
                 ),
                 (
-                    'make',
+                    'car_make',  # Correcting the field name here
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        to='app_name.CarMake'
+                        to='djangoapp.CarMake'
                     )
                 ),
             ],
