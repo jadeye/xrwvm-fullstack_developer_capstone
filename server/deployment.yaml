@@ -5,7 +5,7 @@ metadata:
     run: dealership
   name: dealership
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       run: dealership
